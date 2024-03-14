@@ -4,8 +4,10 @@ font-family: 'Open Sans', sans-serif;
 */
 
 :root {
-    --primary-color: #0A11s8;
+    --primary-color: #0A1158;
     --white-color: #fff;
+    --light-gray-color: #eee;
+    --gap: 3rem
 }
 
 * {
@@ -70,4 +72,63 @@ h6 {
 
 .section {
     min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu {
+    background: var(--white-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-bottom: 1px solid var(--light-gray-color);
+}
+
+.menu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.menu h1 {
+    font-size: 5rem;
+    color: black;
+}
+
+.menu h1 a {
+    color: inherit;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 2rem;
+    color: var(--primary-color);
+    position: relative;
+}
+
+.menu ul li a::after{
+    content: "";
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    width: 0;
+    height: 0.3rem;
+    background-color: crimson;
+    transition: all 300ms ease-in-out;
+}
+
+.menu ul li a:hover::after{
+    left: 25%;
+    width: 50%;
 }
