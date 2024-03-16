@@ -20,8 +20,8 @@
             <h1><a href="#">LOGO</a></h1>   
             <nav>
                 <ul>
-                    <li><a href="#">Intro</a></li>
-                    <li><a href="#">Top3</a></li>
+                    <li><a href="#intro">Intro</a></li>
+                    <li><a href="#top3">Top3</a></li>
                     <li><a href="#">Gallery</a></li>
                     <li><a href="#">Work</a></li>
                     <li><a href="#">Contact</a></li>
@@ -31,7 +31,7 @@
     </aside>
 
     <div class="menu-spacing"></div>
-        <section class="intro main-bg section">
+        <section id="intro" class="intro main-bg section">
             <div class="main-content intro-content">
                 <div class="intro-text-content">
                     <h2>January bring us Firefox 85</h2>
@@ -44,7 +44,15 @@
                 </div>
             </div>
         </section>
-    <section class="white-bg section"></section>
+
+    <section id="top3" class="white-bg section">
+        <div class="main-content top3-content">
+            <h2>top 3 jobs</h2>
+            <p>The release of Apple Silicon-based Macs at the end of last year generated a flurry of news coverage and some surprises at the machine’s performance. This post details some background information on the experience of porting Firefox to run natively on these CPUs.</p>
+            <p>We’ll start with some background on the Mac transition and give an overview of Firefox internals that needed to know about the new architecture, before moving on to the concept of Universal Binaries.</p>
+            <p>We’ll then explain how DRM/EME works on the new platform, talk about our experience with macOS Big Sur, and discuss various updater problems we had to deal with. We’ll conclude with the release and an overview of various other improvements that are in the pipeline.</p>
+        </div>
+    </section>
 
 </body>
 </html>

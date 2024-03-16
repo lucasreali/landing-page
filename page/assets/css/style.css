@@ -13,15 +13,18 @@
     justify-content: center;
 }
 
-.intro-text-content h2 {
-    font-size: 5rem;
-    margin-bottom: 5rem;
-    text-transform: uppercase;
-    line-height: 1.2;
-}
 
 .intro-img img{
     max-width: 100%;
     height: auto;
 
+}
+
+.top3-content {
+    max-width: 64rem;
+    flex-flow: column wrap;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
 }
