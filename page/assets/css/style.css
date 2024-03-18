@@ -82,3 +82,14 @@
 .gallery-img img:hover {
   transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
 }
+
+.grid-two-content {
+  flex-flow: column wrap;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.grid-two-content h2 {
+  padding-bottom: 10rem;
+}
